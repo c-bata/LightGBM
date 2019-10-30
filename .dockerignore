@@ -1,0 +1,10 @@
+.ci/
+.github/
+.git/
+.idea/
+.nuget/
+docker/
+compute/
+docs/
+R-package/
+Dockerfile

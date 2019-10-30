@@ -121,6 +121,7 @@ def compile_cpp(use_mingw=False, use_gpu=False, use_mpi=False,
         cmake_cmd.append("-DUSE_OPENMP=OFF")
     if use_hdfs:
         cmake_cmd.append("-DUSE_HDFS=ON")
+    cmake_cmd.append("-DCMAKE_BUILD_TYPE=Debug")
 
     if system() in ('Windows', 'Microsoft'):
         if use_mingw:
